@@ -1,0 +1,30 @@
+[package]
+name = "rtkd"
+version = "0.1.0"
+edition = "2021"
+description = "A minimalistic library for downloading TikTok videos"
+license = "MIT"
+repository = "https://github.com/Icytank/rtkd"
+keywords = ["tiktok", "downloader", "video"]
+categories = ["multimedia", "api-bindings"]
+
+[lib]
+name = "rtkd"
+path = "src/lib.rs"
+
+[[example]]
+name = "simple_downloader"
+path = "examples/simple_downloader.rs"
+
+[dependencies]
+anyhow = "1.0.98"
+chrono = "0.4.41"
+cookies = "0.0.1"
+futures-util = "0.3.31"
+indicatif = "0.17.11"
+json = "0.12.4"
+regex = "1.11.1"
+reqwest = { version = "0.12.15", features = ["stream", "json", "cookies"] }
+serde = { version = "1.0.219", features = ["derive"] }
+tokio = { version = "1.45.0", features = ["full"] }
+toml = "0.8.22"
