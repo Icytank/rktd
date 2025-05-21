@@ -18,6 +18,12 @@ Add this to your `Cargo.toml`:
 rtkd = "0.1.0"
 ```
 
+Or add via cargo
+
+```bash
+cargo add rtkd
+```
+
 ## Usage
 
 ```rust
